@@ -3,353 +3,239 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Landing page moderna e responsive (HTML/CSS) con layout professionale, CTA, pricing e FAQ." />
-  <title>Landing Page | Michel Branche</title>
+  <title>Landing Page | Demo</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <a class="skip-link" href="#main">Vai al contenuto</a>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container header-inner">
-      <a class="brand" href="#" aria-label="Home">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span class="brand-name">NovaLanding</span>
+  <!-- TOP BAR -->
+  <header class="lp-header">
+    <div class="lp-container lp-header-inner">
+      <a class="back-portfolio" href="https://michelbranche.github.io/portfolio/" aria-label="Torna al portfolio">
+        ← Portfolio
       </a>
 
-      <button class="nav-toggle" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="site-nav">
-        <span class="nav-toggle-bar" aria-hidden="true"></span>
-        <span class="nav-toggle-bar" aria-hidden="true"></span>
-        <span class="nav-toggle-bar" aria-hidden="true"></span>
-      </button>
-
-      <nav id="site-nav" class="nav">
+      <nav class="lp-nav" aria-label="Navigazione landing">
         <a href="#features">Funzioni</a>
-        <a href="#showcase">Come funziona</a>
         <a href="#pricing">Prezzi</a>
         <a href="#faq">FAQ</a>
-        <a class="nav-cta" href="#contact">Contattami</a>
       </nav>
     </div>
   </header>
 
-  <main id="main">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="badge">UI moderna · Responsive · Conversion-focused</p>
-          <h1>Landing page professionale che sembra “da agenzia”</h1>
-          <p class="lead">
-            Struttura chiara, CTA forti, sezioni complete (features, pricing, FAQ).
-            Perfetta per presentare un prodotto, un servizio o una startup.
-          </p>
+  <!-- HERO -->
+  <main class="lp-hero">
+    <div class="lp-container lp-hero-grid">
 
-          <div class="hero-actions">
-            <a class="btn" href="#pricing">Vedi i prezzi</a>
-            <a class="btn btn-secondary" href="#features">Scopri le funzioni</a>
-          </div>
+      <section class="lp-hero-left" aria-label="Intro">
+        <span class="lp-pill">UI pulita · Responsive · Focus conversione</span>
 
-          <div class="hero-metrics" aria-label="Metriche">
-            <div class="metric">
-              <span class="metric-value">+3</span>
-              <span class="metric-label">sezioni “pro”</span>
-            </div>
-            <div class="metric">
-              <span class="metric-value">100%</span>
-              <span class="metric-label">responsive</span>
-            </div>
-            <div class="metric">
-              <span class="metric-value">0</span>
-              <span class="metric-label">librerie</span>
-            </div>
-          </div>
+        <h1 class="lp-title">
+          Landing page moderna<br />
+          per presentare un servizio
+        </h1>
+
+        <p class="lp-subtitle">
+          Struttura chiara, CTA visibili e sezioni complete (funzioni, prezzi, FAQ).
+          Pensata per essere riutilizzabile e facile da adattare a progetti diversi.
+        </p>
+
+        <div class="lp-hero-actions">
+          <a class="lp-btn lp-btn-primary" href="#pricing">Vedi i prezzi</a>
+          <a class="lp-btn lp-btn-ghost" href="#features">Scopri le funzioni</a>
         </div>
 
-        <div class="hero-visual" aria-label="Preview UI">
-          <div class="ui-card ui-card--top">
-            <div class="ui-line w-70"></div>
-            <div class="ui-line w-45"></div>
-            <div class="ui-line w-85"></div>
-            <div class="ui-pills">
-              <span class="ui-pill"></span>
-              <span class="ui-pill"></span>
-              <span class="ui-pill"></span>
-            </div>
+        <div class="lp-stats" aria-label="Dati rapidi">
+          <div class="lp-stat">
+            <strong>+3</strong>
+            <span>sezioni pronte</span>
           </div>
-
-          <div class="ui-card ui-card--mid">
-            <div class="ui-kpi">
-              <div class="kpi-dot"></div>
-              <div class="ui-line w-60"></div>
-            </div>
-            <div class="ui-bars">
-              <span class="ui-bar h-60"></span>
-              <span class="ui-bar h-35"></span>
-              <span class="ui-bar h-80"></span>
-              <span class="ui-bar h-50"></span>
-            </div>
+          <div class="lp-stat">
+            <strong>100%</strong>
+            <span>responsive</span>
           </div>
-
-          <div class="ui-card ui-card--bot">
-            <div class="ui-line w-55"></div>
-            <div class="ui-line w-90"></div>
-            <div class="ui-line w-40"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container trust">
-        <p class="trust-title">Ideale per:</p>
-        <div class="trust-logos" aria-label="Esempi settori">
-          <span class="logo-pill">SaaS</span>
-          <span class="logo-pill">Hotel</span>
-          <span class="logo-pill">Ristorante</span>
-          <span class="logo-pill">Freelance</span>
-          <span class="logo-pill">Agenzia</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURES -->
-    <section id="features" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Funzioni che contano</h2>
-          <p class="section-sub">
-            Qui fai vedere che sai fare UI moderna e gerarchia visiva: griglie, spacing, card, CTA.
-          </p>
-        </div>
-
-        <div class="grid-3">
-          <article class="card">
-            <div class="icon" aria-hidden="true">⚡</div>
-            <h3>Velocità</h3>
-            <p>HTML e CSS puliti: struttura semplice, caricamento rapido, zero dipendenze.</p>
-          </article>
-
-          <article class="card">
-            <div class="icon" aria-hidden="true">📱</div>
-            <h3>Responsive reale</h3>
-            <p>Griglie fluide, componenti adattivi e tipografia leggibile su mobile.</p>
-          </article>
-
-          <article class="card">
-            <div class="icon" aria-hidden="true">🎯</div>
-            <h3>Conversione</h3>
-            <p>CTA visibili, sezioni “pricing/FAQ”, e layout pensato per guidare l’utente.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- SHOWCASE -->
-    <section id="showcase" class="section section-alt">
-      <div class="container showcase">
-        <div class="showcase-visual" aria-hidden="true">
-          <div class="preview">
-            <div class="preview-top"></div>
-            <div class="preview-body">
-              <div class="preview-row"></div>
-              <div class="preview-row"></div>
-              <div class="preview-row"></div>
-            </div>
+          <div class="lp-stat">
+            <strong>0</strong>
+            <span>librerie</span>
           </div>
         </div>
 
-        <div class="showcase-copy">
-          <h2>Struttura chiara, look 2026</h2>
-          <p class="section-sub">
-            Questo è il classico progetto che piace alle aziende: sembra reale, ordinato, e comunica competenza.
-          </p>
-
-          <ul class="list">
-            <li><span class="check" aria-hidden="true">✓</span> Header pulito con nav e CTA</li>
-            <li><span class="check" aria-hidden="true">✓</span> Sezioni complete (features, testimonials, pricing)</li>
-            <li><span class="check" aria-hidden="true">✓</span> FAQ con <code>&lt;details&gt;</code> (zero JS)</li>
-            <li><span class="check" aria-hidden="true">✓</span> Menu mobile con JS minimale</li>
-          </ul>
-
-          <a class="btn btn-secondary" href="#contact">Chiedi una versione custom</a>
+        <div class="lp-tags" aria-label="Ideale per">
+          <span class="lp-tag">SaaS</span>
+          <span class="lp-tag">Hotel</span>
+          <span class="lp-tag">Ristorante</span>
+          <span class="lp-tag">Freelance</span>
+          <span class="lp-tag">Agenzia</span>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- TESTIMONIALS -->
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Social proof</h2>
-          <p class="section-sub">Testimonianze “fittizie” ma credibili (perfette per portfolio).</p>
-        </div>
-
-        <div class="grid-3">
-          <article class="quote">
-            <p>“Layout super pulito, sembra davvero un lavoro da team prodotto.”</p>
-            <div class="quote-meta">
-              <span class="avatar-dot" aria-hidden="true"></span>
-              <span><strong>Product Owner</strong> · Startup</span>
-            </div>
-          </article>
-
-          <article class="quote">
-            <p>“Responsive ottimo. Spacing e tipografia fatti bene: zero confusione.”</p>
-            <div class="quote-meta">
-              <span class="avatar-dot" aria-hidden="true"></span>
-              <span><strong>Designer</strong> · Studio</span>
-            </div>
-          </article>
-
-          <article class="quote">
-            <p>“Chiara, diretta, e con sezioni complete: perfetta come landing.”</p>
-            <div class="quote-meta">
-              <span class="avatar-dot" aria-hidden="true"></span>
-              <span><strong>Founder</strong> · Freelance</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- PRICING -->
-    <section id="pricing" class="section section-alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Prezzi</h2>
-          <p class="section-sub">Tre piani (anche qui: UI e gerarchia visiva). Prezzi demo.</p>
-        </div>
-
-        <div class="pricing">
-          <article class="price-card">
-            <h3>Starter</h3>
-            <p class="price">€49<span>/demo</span></p>
-            <ul class="price-list">
-              <li>Hero + features</li>
-              <li>CTA + footer</li>
-              <li>Responsive base</li>
-            </ul>
-            <a class="btn btn-secondary" href="#contact">Richiedi</a>
-          </article>
-
-          <article class="price-card price-card--featured" aria-label="Piano consigliato">
-            <div class="ribbon">Consigliato</div>
-            <h3>Pro</h3>
-            <p class="price">€99<span>/demo</span></p>
-            <ul class="price-list">
-              <li>Tutto Starter</li>
-              <li>Pricing + FAQ</li>
-              <li>Menu mobile</li>
-            </ul>
-            <a class="btn" href="#contact">Richiedi</a>
-          </article>
-
-          <article class="price-card">
-            <h3>Custom</h3>
-            <p class="price">€149<span>/demo</span></p>
-            <ul class="price-list">
-              <li>Tutto Pro</li>
-              <li>Sezioni su misura</li>
-              <li>Branding</li>
-            </ul>
-            <a class="btn btn-secondary" href="#contact">Parliamone</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>FAQ</h2>
-          <p class="section-sub">Usiamo <code>&lt;details&gt;</code>: pulito e zero JS.</p>
-        </div>
-
-        <div class="faq">
-          <details class="faq-item">
-            <summary>Posso riusare questa struttura per altri progetti?</summary>
-            <p>Sì: è pensata per essere “template-like”. Cambi testo, colori, immagini e sei a posto.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary>Serve JavaScript?</summary>
-            <p>Solo per il menu mobile (minimale). Tutto il resto è HTML/CSS.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary>Come la pubblico su GitHub Pages?</summary>
-            <p>Repo → Settings → Pages → Deploy from branch → main / root. Fine.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section section-alt">
-      <div class="container contact">
-        <div class="contact-card">
-          <h2>Contatto</h2>
-          <p class="section-sub">
-            Form demo (senza backend). Per il portfolio va benissimo: mostra UI e struttura.
-          </p>
-
-          <form class="form" action="#" onsubmit="return false;">
-            <div class="form-row">
-              <label>
-                Nome
-                <input type="text" placeholder="Il tuo nome" autocomplete="name" />
-              </label>
-
-              <label>
-                Email
-                <input type="email" placeholder="nome@email.com" autocomplete="email" />
-              </label>
-            </div>
-
-            <label>
-              Messaggio
-              <textarea rows="5" placeholder="Scrivimi qui..."></textarea>
-            </label>
-
-            <div class="form-actions">
-              <a class="btn" href="mailto:michel.lavoro@gmail.com">Scrivimi via email</a>
-              <span class="hint">Oppure personalizziamo il form con JS più avanti.</span>
-            </div>
-          </form>
-        </div>
-
-        <footer class="mini-footer">
-          <p>© 2026 Michel Branche</p>
-          <div class="mini-links">
-            <a href="https://github.com/MichelBranche">GitHub</a>
-            <a href="mailto:michel.lavoro@gmail.com">Email</a>
+      <!-- HERO RIGHT (ILLUSTRAZIONE / UI CARDS) -->
+      <aside class="lp-hero-right" aria-label="Preview UI">
+        <div class="ui-card ui-card--small">
+          <div class="ui-line w80"></div>
+          <div class="ui-line w60"></div>
+          <div class="ui-line w70"></div>
+          <div class="ui-pills">
+            <span class="ui-pill"></span>
+            <span class="ui-pill"></span>
+            <span class="ui-pill"></span>
           </div>
-        </footer>
-      </div>
-    </section>
+        </div>
+
+        <div class="ui-card ui-card--main">
+          <div class="ui-top">
+            <span class="ui-dot"></span>
+            <span class="ui-dot"></span>
+            <span class="ui-dot"></span>
+          </div>
+          <div class="ui-chart">
+            <span class="bar b1"></span>
+            <span class="bar b2"></span>
+            <span class="bar b3"></span>
+            <span class="bar b4"></span>
+          </div>
+        </div>
+
+        <div class="ui-card ui-card--small ui-card--bottom">
+          <div class="ui-line w70"></div>
+          <div class="ui-line w50"></div>
+          <div class="ui-line w65"></div>
+        </div>
+      </aside>
+
+    </div>
   </main>
 
-  <script>
-    // Mobile nav (JS minimale)
-    const toggle = document.querySelector(".nav-toggle");
-    const nav = document.querySelector("#site-nav");
+  <!-- FEATURES -->
+  <section id="features" class="lp-section">
+    <div class="lp-container">
+      <div class="lp-section-head">
+        <h2>Funzioni principali</h2>
+        <p>Componenti semplici, puliti e riutilizzabili. Pensati per essere adattati in fretta.</p>
+      </div>
 
-    function closeNav(){
-      nav.classList.remove("is-open");
-      toggle.setAttribute("aria-expanded", "false");
-    }
+      <div class="lp-grid3">
+        <article class="lp-card">
+          <h3>Gerarchia chiara</h3>
+          <p>Titoli, testo e CTA sono leggibili subito: meno confusione, più focus.</p>
+        </article>
 
-    toggle.addEventListener("click", () => {
-      const isOpen = nav.classList.toggle("is-open");
-      toggle.setAttribute("aria-expanded", String(isOpen));
-    });
+        <article class="lp-card">
+          <h3>Sezioni complete</h3>
+          <p>Hero, funzioni, pricing e FAQ: hai già una struttura “da progetto vero”.</p>
+        </article>
 
-    // Chiudi menu quando clicchi un link (mobile)
-    nav.querySelectorAll("a").forEach(a => {
-      a.addEventListener("click", () => closeNav());
-    });
-  </script>
+        <article class="lp-card">
+          <h3>Responsive serio</h3>
+          <p>Layout che regge bene su mobile, tablet e desktop senza “rompersi”.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="lp-section lp-section--alt">
+    <div class="lp-container">
+      <div class="lp-section-head">
+        <h2>Prezzi</h2>
+        <p>Un esempio semplice di tabella prezzi. Cambi i valori e lo riusi per qualsiasi cliente.</p>
+      </div>
+
+      <div class="lp-grid3">
+        <article class="lp-price">
+          <h3>Starter</h3>
+          <p class="lp-price-sub">Per una singola pagina</p>
+          <div class="lp-price-value">€99</div>
+          <ul class="lp-list">
+            <li>Hero + CTA</li>
+            <li>Sezione funzioni</li>
+            <li>Footer contatti</li>
+          </ul>
+          <a class="lp-btn lp-btn-ghost lp-btn-full" href="#contact">Contattami</a>
+        </article>
+
+        <article class="lp-price lp-price--featured">
+          <h3>Pro</h3>
+          <p class="lp-price-sub">Struttura completa</p>
+          <div class="lp-price-value">€199</div>
+          <ul class="lp-list">
+            <li>Tutte le sezioni</li>
+            <li>Pricing + FAQ</li>
+            <li>Ottimizzazione mobile</li>
+          </ul>
+          <a class="lp-btn lp-btn-primary lp-btn-full" href="#contact">Contattami</a>
+        </article>
+
+        <article class="lp-price">
+          <h3>Custom</h3>
+          <p class="lp-price-sub">Per esigenze specifiche</p>
+          <div class="lp-price-value">Su richiesta</div>
+          <ul class="lp-list">
+            <li>Contenuti su misura</li>
+            <li>Varianti sezioni</li>
+            <li>Micro-interazioni</li>
+          </ul>
+          <a class="lp-btn lp-btn-ghost lp-btn-full" href="#contact">Scrivimi</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="lp-section">
+    <div class="lp-container">
+      <div class="lp-section-head">
+        <h2>FAQ</h2>
+        <p>Domande tipiche che trovi spesso nelle landing. Le testi e le riusi.</p>
+      </div>
+
+      <div class="lp-faq">
+        <details class="lp-faq-item">
+          <summary>Posso riutilizzare questa landing per altri progetti?</summary>
+          <p>Sì: cambia testi, colori e immagini e hai una base solida per diversi settori.</p>
+        </details>
+
+        <details class="lp-faq-item">
+          <summary>Serve JavaScript?</summary>
+          <p>Non è obbligatorio. Qui lo usi solo per piccole cose (menu/scroll) se vuoi.</p>
+        </details>
+
+        <details class="lp-faq-item">
+          <summary>È ottimizzata per mobile?</summary>
+          <p>Sì: layout e spaziature sono pensati per funzionare bene anche su schermi piccoli.</p>
+        </details>
+
+        <details class="lp-faq-item">
+          <summary>Posso aggiungere altre sezioni?</summary>
+          <p>Certo: testimonianze, form, galleria… la struttura è fatta apposta per crescere.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="lp-section lp-section--alt">
+    <div class="lp-container">
+      <div class="lp-cta">
+        <h2>Vuoi adattarla al tuo progetto?</h2>
+        <p>Puoi usare questa pagina come base e personalizzarla: testi, colori, sezioni e immagini.</p>
+
+        <div class="lp-cta-actions">
+          <a class="lp-btn lp-btn-primary" href="https://michelbranche.github.io/portfolio/">Torna al portfolio</a>
+          <a class="lp-btn lp-btn-ghost" href="https://github.com/MichelBranche/landing-page">Vedi il codice</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="lp-footer">
+    <div class="lp-container lp-footer-inner">
+      <p>© 2026 — Demo landing (HTML/CSS) · Michel Branche</p>
+      <a class="back-portfolio back-portfolio--footer" href="https://michelbranche.github.io/portfolio/">← Portfolio</a>
+    </div>
+  </footer>
+
 </body>
 </html>
