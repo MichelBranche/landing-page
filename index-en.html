@@ -1,1 +1,241 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page | Demo</title>
+  <link rel="stylesheet" href="./style.css?v=5">
+</head>
 
+<body>
+
+  <!-- TOP BAR -->
+  <header class="lp-header">
+    <div class="lp-container lp-header-inner">
+      <a class="back-portfolio" href="https://michelbranche.github.io/portfolio/" aria-label="Torna al portfolio">
+        ← Portfolio
+      </a>
+
+      <nav class="lp-nav" aria-label="Navigazione landing">
+        <a href="#features">Funzioni</a>
+        <a href="#pricing">Prezzi</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="lp-hero">
+    <div class="lp-container lp-hero-grid">
+
+      <section class="lp-hero-left" aria-label="Intro">
+        <span class="lp-pill">UI pulita · Responsive · Focus conversione</span>
+
+        <h1 class="lp-title">
+          Landing page moderna<br />
+          per presentare un servizio
+        </h1>
+
+        <p class="lp-subtitle">
+          Struttura chiara, CTA visibili e sezioni complete (funzioni, prezzi, FAQ).
+          Pensata per essere riutilizzabile e facile da adattare a progetti diversi.
+        </p>
+
+        <div class="lp-hero-actions">
+          <a class="lp-btn lp-btn-primary" href="#pricing">Vedi i prezzi</a>
+          <a class="lp-btn lp-btn-ghost" href="#features">Scopri le funzioni</a>
+        </div>
+
+        <div class="lp-stats" aria-label="Dati rapidi">
+          <div class="lp-stat">
+            <strong>+3</strong>
+            <span>sezioni pronte</span>
+          </div>
+          <div class="lp-stat">
+            <strong>100%</strong>
+            <span>responsive</span>
+          </div>
+          <div class="lp-stat">
+            <strong>0</strong>
+            <span>librerie</span>
+          </div>
+        </div>
+
+        <div class="lp-tags" aria-label="Ideale per">
+          <span class="lp-tag">SaaS</span>
+          <span class="lp-tag">Hotel</span>
+          <span class="lp-tag">Ristorante</span>
+          <span class="lp-tag">Freelance</span>
+          <span class="lp-tag">Agenzia</span>
+        </div>
+      </section>
+
+      <!-- HERO RIGHT (ILLUSTRAZIONE / UI CARDS) -->
+      <aside class="lp-hero-right" aria-label="Preview UI">
+        <div class="ui-card ui-card--small">
+          <div class="ui-line w80"></div>
+          <div class="ui-line w60"></div>
+          <div class="ui-line w70"></div>
+          <div class="ui-pills">
+            <span class="ui-pill"></span>
+            <span class="ui-pill"></span>
+            <span class="ui-pill"></span>
+          </div>
+        </div>
+
+        <div class="ui-card ui-card--main">
+          <div class="ui-top">
+            <span class="ui-dot"></span>
+            <span class="ui-dot"></span>
+            <span class="ui-dot"></span>
+          </div>
+          <div class="ui-chart">
+            <span class="bar b1"></span>
+            <span class="bar b2"></span>
+            <span class="bar b3"></span>
+            <span class="bar b4"></span>
+          </div>
+        </div>
+
+        <div class="ui-card ui-card--small ui-card--bottom">
+          <div class="ui-line w70"></div>
+          <div class="ui-line w50"></div>
+          <div class="ui-line w65"></div>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- FEATURES -->
+  <section id="features" class="lp-section">
+    <div class="lp-container">
+      <div class="lp-section-head">
+        <h2>Funzioni principali</h2>
+        <p>Componenti semplici, puliti e riutilizzabili. Pensati per essere adattati in fretta.</p>
+      </div>
+
+      <div class="lp-grid3">
+        <article class="lp-card">
+          <h3>Gerarchia chiara</h3>
+          <p>Titoli, testo e CTA sono leggibili subito: meno confusione, più focus.</p>
+        </article>
+
+        <article class="lp-card">
+          <h3>Sezioni complete</h3>
+          <p>Hero, funzioni, pricing e FAQ: hai già una struttura “da progetto vero”.</p>
+        </article>
+
+        <article class="lp-card">
+          <h3>Responsive serio</h3>
+          <p>Layout che regge bene su mobile, tablet e desktop senza “rompersi”.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="lp-section lp-section--alt">
+    <div class="lp-container">
+      <div class="lp-section-head">
+        <h2>Prezzi</h2>
+        <p>Un esempio semplice di tabella prezzi. Cambi i valori e lo riusi per qualsiasi cliente.</p>
+      </div>
+
+      <div class="lp-grid3">
+        <article class="lp-price">
+          <h3>Starter</h3>
+          <p class="lp-price-sub">Per una singola pagina</p>
+          <div class="lp-price-value">€99</div>
+          <ul class="lp-list">
+            <li>Hero + CTA</li>
+            <li>Sezione funzioni</li>
+            <li>Footer contatti</li>
+          </ul>
+          <a class="lp-btn lp-btn-ghost lp-btn-full" href="#contact">Contattami</a>
+        </article>
+
+        <article class="lp-price lp-price--featured">
+          <h3>Pro</h3>
+          <p class="lp-price-sub">Struttura completa</p>
+          <div class="lp-price-value">€199</div>
+          <ul class="lp-list">
+            <li>Tutte le sezioni</li>
+            <li>Pricing + FAQ</li>
+            <li>Ottimizzazione mobile</li>
+          </ul>
+          <a class="lp-btn lp-btn-primary lp-btn-full" href="#contact">Contattami</a>
+        </article>
+
+        <article class="lp-price">
+          <h3>Custom</h3>
+          <p class="lp-price-sub">Per esigenze specifiche</p>
+          <div class="lp-price-value">Su richiesta</div>
+          <ul class="lp-list">
+            <li>Contenuti su misura</li>
+            <li>Varianti sezioni</li>
+            <li>Micro-interazioni</li>
+          </ul>
+          <a class="lp-btn lp-btn-ghost lp-btn-full" href="#contact">Scrivimi</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="lp-section">
+    <div class="lp-container">
+      <div class="lp-section-head">
+        <h2>FAQ</h2>
+        <p>Domande tipiche che trovi spesso nelle landing. Le testi e le riusi.</p>
+      </div>
+
+      <div class="lp-faq">
+        <details class="lp-faq-item">
+          <summary>Posso riutilizzare questa landing per altri progetti?</summary>
+          <p>Sì: cambia testi, colori e immagini e hai una base solida per diversi settori.</p>
+        </details>
+
+        <details class="lp-faq-item">
+          <summary>Serve JavaScript?</summary>
+          <p>Non è obbligatorio. Qui lo usi solo per piccole cose (menu/scroll) se vuoi.</p>
+        </details>
+
+        <details class="lp-faq-item">
+          <summary>È ottimizzata per mobile?</summary>
+          <p>Sì: layout e spaziature sono pensati per funzionare bene anche su schermi piccoli.</p>
+        </details>
+
+        <details class="lp-faq-item">
+          <summary>Posso aggiungere altre sezioni?</summary>
+          <p>Certo: testimonianze, form, galleria… la struttura è fatta apposta per crescere.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="lp-section lp-section--alt">
+    <div class="lp-container">
+      <div class="lp-cta">
+        <h2>Vuoi adattarla al tuo progetto?</h2>
+        <p>Puoi usare questa pagina come base e personalizzarla: testi, colori, sezioni e immagini.</p>
+
+        <div class="lp-cta-actions">
+          <a class="lp-btn lp-btn-primary" href="https://michelbranche.github.io/portfolio/">Torna al portfolio</a>
+          <a class="lp-btn lp-btn-ghost" href="https://github.com/MichelBranche/landing-page">Vedi il codice</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="lp-footer">
+    <div class="lp-container lp-footer-inner">
+      <p>© 2026 — Demo landing (HTML/CSS) · Michel Branche</p>
+      <a class="back-portfolio back-portfolio--footer" href="https://michelbranche.github.io/portfolio/">← Portfolio</a>
+    </div>
+  </footer>
+
+</body>
+</html>
